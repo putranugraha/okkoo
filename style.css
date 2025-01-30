@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, 'Madelican';
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Madelican';
+    color: #FF9898;
+}
+
+.img-container {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-bottom: 20px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.cardshow {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.card {
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 0.5rem;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    height: 400px; /* Fixed height for the image */
+    width: 250px; /* Fixed width for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cardhobby {
+    background-color: whitesmoke;
+    display: flex;
+    width: 100%;
+    max-width: 880px;
+}
+
+.cardhobby img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg,#ff9898,#ffcfcf,#ff564d);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+@media (max-width: 768px) {
+   
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .card {
+        width: 200px; /* Slightly smaller width for mobile */
+        height: 320px; /* Slightly smaller height for mobile */
+    }
+
+    .card img {
+        width: 200px; /* Slightly smaller width for mobile */
+        height: 320px; /* Slightly smaller height for mobile */
+    }
+
+    .cardhobby {
+        max-width: 100%;
+    }
+}
